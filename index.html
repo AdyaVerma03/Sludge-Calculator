@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sludge Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="block">
+    <form id="form" onsubmit="">
+    <h1>Sludge Calculator</h1>
+        
+        <table>
+            <tr class="heading-text"><td class="heading-text"><h3>Raw Sewage:</h3></td></tr>
+        <tr>
+            <td class="input-field"><p>Biological Oxygen Demand(BOD) in mg/l</p></td>
+            <td class="input-box"><input type="number" id="iBOD"></td>
+        </tr>
+        <tr>
+            <td class="input-field"><p>Chemical Oxygen Demand(COD) in mg/l</p></td>
+            <td class="input-box"><input type="number" id="iCOD"></td>
+        </tr>
+        <tr>
+            <td class="input-field"><p>Total Suspended Solids(TSS) in mg/l</p></td>
+            <td class="input-box"><input type="number" id="iTSS"></td>
+        </tr>
+        <tr>
+            <td class="input-field"><p>Volatile Suspended Solids(TSS) in mg/l</p></td>
+            <td class="input-box"><input type="number" id="iVSS"></td>
+        </tr>
+        <tr>
+            <td class="input-field"><p>Ammonia Nitrogen in mg/l</p></td>
+            <td class="input-box"><input type="number" id="iAN"></td>
+        </tr>
+        <tr>
+            <td class="input-field"><p>Total Nitrogen in mg/l</p></td>
+            <td class="input-box"><input type="number" id="iTN"></td>
+        </tr>
+        <tr>
+            <td class="input-field"><p>Phosphorus in mg/l</p></td>
+            <td class="input-box"><input type="number" id="iP"></td>
+        </tr>
+        
+    
+
+    
+        <tr class="heading-text"><td class="heading-text"><h3 class="heading-text">Treated Sewage:</h3></td></tr>
+          <tr>
+            <td class="input-field"><p>Biological Oxygen Demand(BOD) in mg/l</p></td>
+            <td class="input-box"><input type="number" id="tBOD"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Chemical Oxygen Demand(COD) in mg/l</p></td>
+            <td class="input-box"><input type="number" id="tCOD"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Total Suspended Solids(TSS) in mg/l</p></td>
+            <td class="input-box"><input type="number" id="tTSS"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Volatile Suspended Solids(TSS) in mg/l</p></td>
+            <td class="input-box"><input type="number" id="tVSS"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Ammonia Nitrogen in mg/l</p></td>
+            <td class="input-box"><input type="number" id="tAN"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Total Nitrogen in mg/l</p></td>
+            <td class="input-box"><input type="number" id="tTN"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Phosphorus in mg/l</p></td>
+            <td class="input-box"><input type="number" id="tP"></td>
+          </tr>
+        
+          <tr class="heading-text"><td class="heading-text"><h3> </h3></td></tr>
+          <tr>
+            <td class="input-field"><p>Flow to Plant in m<sup>3</sup>/day</p></td>
+            <td class="input-box"><input type="number" id="Q"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Biodegradable COD (So) in gm/m<sup>3</sup></p></td>
+            <td class="input-box"><input type="number" id="So"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Solid retention time (SRT) in days</p></td>
+            <td class="input-box"><input type="number" id="SRT"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Y<sub>n</sub> (gVSS/gm of NH<sub>4</sub>-n)</p></td>
+            <td class="input-box"><input type="number" id="Yn"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Endogenous decay coefficient for nitrifying bacteria at 20 Degree C (K<sub>dn</sub>)</p></td>
+            <td class="input-box"><input type="number" id="Kdn"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Endogenous decay coefficient for nitrifying bacteria at 35 Degree C (K<sub>(dn)T</sub>35)</p></td>
+            <td class="input-box"><input type="number" id="Kdnt35"></td>
+          </tr>
+          <tr>
+            <td class="input-field"><p>Growth coefficient of nitrifying bacteria (Y<sub>n</sub>35)</p></td>
+            <td class="input-box"><input type="number" id="Yn35"></td>
+          </tr>
+        </table>
+        <a href="#result" class="hyper-button"><button type="button" onclick="calculate()">Calculate</button></a>
+        <div id="result" class="result">
+            
+        </div>
+    </div>
+    
+</form>
+</body>
+</html>

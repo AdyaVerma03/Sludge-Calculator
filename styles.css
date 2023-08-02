@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+  }
+  
+  /* Center the content on the page */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Add some padding and background to the main block */
+  .block {
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  /* Add some spacing between the table rows */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table td {
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
+  .input-box{
+    padding-right: 20px;
+  }
+  .input-field{
+    padding-left: 20px;
+  }
+  
+  /* Style the "Calculate" button */
+  button {
+    display: block;
+    margin: 30px auto;
+    padding: 14px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add some styling to the result div */
+  #result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #result p{
+    font-size: 18px;
+  }
+
+  .hyper-button{
+    text-decoration: none;
+  }
+
+  /* Style input fields */
+  input[type="number"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #007bff;
+  }
+  .heading-text{
+    background-color: #fff !important; 
+    padding-top: 30px;
+    margin-bottom: 0%;
+    color: #007bff;
+    font-size: 20px;
+  }
+  
+  /* Style alternate table rows */
+  table tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  /* Add some subtle hover effect to table rows */
+  table tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+
+  /* To remove the tiny arrows that appear in the textbox */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
